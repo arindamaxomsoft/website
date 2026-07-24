@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +52,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto">
                 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-6">
-                    <i class="fa-solid fa-award"></i> Led by professionals with more than two decades of experience in the software industry
+                    <i class="fa-solid fa-award"></i> Led by a professional with more than two decades of experience in the software industry
                 </span>
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
                     Future-Proof Your Skills in <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">AI, Python & Mobile Tech</span>
@@ -60,8 +61,8 @@
                     Customized training tracks designed for corporate workforces scaling innovation and ambitious students launching high-impact tech careers.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#courses" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-indigo-600/30">
-                        Explore Programs
+                    <a href="#contact" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-indigo-600/30">
+                        Get Enrolled
                     </a>
                     <a href="#corporate" class="w-full sm:w-auto border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-200 px-8 py-4 rounded-xl font-semibold transition-all">
                         Request Corporate Proposal
@@ -254,7 +255,7 @@
                             <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-indigo-400">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
-                            <span>training@axomsoft.com</span>
+                            <a href="mailto:training@axomsoft.com" class="hover:text-indigo-400 transition-colors">training@axomsoft.com</a>
                         </div>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-indigo-400">
@@ -265,30 +266,10 @@
                     </div>
                 </div>
 
-                <form class="bg-slate-950 p-8 rounded-2xl border border-slate-800 space-y-4" onsubmit="event.preventDefault(); alert('Inquiry submitted to AxomSoft!');">
-                    <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-1">Name</label>
-                        <input type="text" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-1">Email</label>
-                        <input type="email" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-1">I am a...</label>
-                        <select class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
-                            <option>Corporate Representative</option>
-                            <option>Student / Individual Learner</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
-                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-lg transition-colors">
-                        Submit Inquiry
-                    </button>
-                </form>
+                <!-- Form Container Controlled by JS Flag -->
+                <div id="enquiry-form-container">
+                    <!-- Dynamic rendering via JavaScript below -->
+                </div>
             </div>
         </div>
     </section>
@@ -298,5 +279,60 @@
         <p>&copy; 2026 AxomSoft. All rights reserved.</p>
     </footer>
 
+    <!-- Form Visibility Toggle Script -->
+    <script>
+        // Set this to `true` when you are ready to show the EmailJS inquiry form.
+        const SHOW_ENQUIRY_FORM = false;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const container = document.getElementById("enquiry-form-container");
+
+            if (SHOW_ENQUIRY_FORM) {
+                // Active Enquiry Form
+                container.innerHTML = `
+                    <form class="bg-slate-950 p-8 rounded-2xl border border-slate-800 space-y-4" onsubmit="event.preventDefault(); alert('Inquiry submitted to AxomSoft!');">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">Name</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+                            <input type="email" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">I am a...</label>
+                            <select class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
+                                <option>Corporate Representative</option>
+                                <option>Student / Individual Learner</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+                            <textarea rows="4" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-lg transition-colors">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                `;
+            } else {
+                // Fallback Card while EmailJS setup is pending
+                container.innerHTML = `
+                    <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 text-center space-y-4">
+                        <div class="w-12 h-12 bg-indigo-500/10 rounded-full flex items-center justify-center text-indigo-400 mx-auto">
+                            <i class="fa-solid fa-paper-plane text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Direct Email Inquiries</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            To enroll or discuss tailored training modules, please send an email directly to our team:
+                        </p>
+                        <a href="mailto:training@axomsoft.com" class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg shadow-indigo-600/30 mt-2">
+                            Email training@axomsoft.com
+                        </a>
+                    </div>
+                `;
+            }
+        });
+    </script>
 </body>
 </html>
