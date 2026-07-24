@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxomSoft | Master AI, Python & Android Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="bg-indigo-600 p-2.5 rounded-xl text-white shadow-lg shadow-indigo-500/30">
+                        <i class="fa-solid fa-code text-xl"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-white">
+                        Axom<span class="text-indigo-500">Soft</span>
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#courses" class="hover:text-indigo-400 transition-colors">Courses</a>
+                    <a href="#corporate" class="hover:text-indigo-400 transition-colors">Corporate Training</a>
+                    <a href="#students" class="hover:text-indigo-400 transition-colors">For Students</a>
+                    <a href="#about" class="hover:text-indigo-400 transition-colors">Why Us</a>
+                </div>
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl font-medium transition-all shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50">
+                        Get Enrolled
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 gradient-bg overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.15)_0,transparent_100%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-6">
+                    <i class="fa-solid fa-sparkles"></i> Industry-Grade Tech Upskilling by AxomSoft
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Future-Proof Your Skills in <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">AI, Python & Mobile Tech</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 mb-8 leading-relaxed">
+                    Customized training tracks designed for corporate workforces scaling innovation and ambitious students launching high-impact tech careers.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#courses" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-indigo-600/30">
+                        Explore Programs
+                    </a>
+                    <a href="#corporate" class="w-full sm:w-auto border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-200 px-8 py-4 rounded-xl font-semibold transition-all">
+                        Request Corporate Proposal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Tracks -->
+    <section class="py-20 bg-slate-900 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Corporate Track -->
+                <div id="corporate" class="bg-slate-950 p-8 md:p-10 rounded-2xl border border-slate-800 relative overflow-hidden card-hover">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl"></div>
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-400 mb-6">
+                        <i class="fa-solid fa-building text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Corporate Teams & Enterprises</h3>
+                    <p class="text-slate-400 mb-6">Upskill engineering teams, automate legacy workflows, and integrate modern AI capabilities directly into your business operations.</p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Tailored curriculum matched to company tech stacks</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Executive & Developer track options</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Flexible delivery (On-site or Remote)</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-indigo-400 font-semibold hover:text-indigo-300">
+                        Schedule Enterprise Demo <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Student Track -->
+                <div id="students" class="bg-slate-950 p-8 md:p-10 rounded-2xl border border-slate-800 relative overflow-hidden card-hover">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl"></div>
+                    <div class="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center text-sky-400 mb-6">
+                        <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Students & Early Career</h3>
+                    <p class="text-slate-400 mb-6">Bridge the academia-industry gap with project-based bootcamps that turn theoretical knowledge into market-ready portfolios.</p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Build 4+ production-ready capstones</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> 1-on-1 mentorship & code reviews</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-emerald-400"></i> Career counseling & interview prep</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-sky-400 font-semibold hover:text-sky-300">
+                        Join Next Student Batch <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section id="courses" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Core Training Tracks</h2>
+                <p class="text-slate-400">Rigorous, hands-on curricula taught by senior software engineers with deep domain expertise.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI & ML -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="w-12 h-12 bg-indigo-600/20 rounded-xl flex items-center justify-center text-indigo-400 mb-6">
+                            <i class="fa-solid fa-brain text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Applied AI & Machine Learning</h3>
+                        <p class="text-sm text-slate-400 mb-6">From core ML algorithms to fine-tuning LLMs, PyTorch, RAG architectures, and generative AI integrations.</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex justify-between items-center text-xs text-slate-400">
+                        <span><i class="fa-regular fa-clock mr-1"></i> 8 - 12 Weeks</span>
+                        <span class="text-indigo-400 font-semibold">Intermediate to Advanced</span>
+                    </div>
+                </div>
+
+                <!-- Python Programming -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-600/20 rounded-xl flex items-center justify-center text-emerald-400 mb-6">
+                            <i class="fa-brands fa-python text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Python Engineering & Automation</h3>
+                        <p class="text-sm text-slate-400 mb-6">Master core data structures, OOP principles, asynchronous programming, Web APIs, and backend automation.</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex justify-between items-center text-xs text-slate-400">
+                        <span><i class="fa-regular fa-clock mr-1"></i> 6 - 10 Weeks</span>
+                        <span class="text-emerald-400 font-semibold">Beginner to Advanced</span>
+                    </div>
+                </div>
+
+                <!-- Android Development -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="w-12 h-12 bg-sky-600/20 rounded-xl flex items-center justify-center text-sky-400 mb-6">
+                            <i class="fa-brands fa-android text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Modern Android Development</h3>
+                        <p class="text-sm text-slate-400 mb-6">Build native mobile apps using Kotlin, Jetpack Compose, Clean Architecture, and REST API integration.</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex justify-between items-center text-xs text-slate-400">
+                        <span><i class="fa-regular fa-clock mr-1"></i> 8 - 12 Weeks</span>
+                        <span class="text-sky-400 font-semibold">All Levels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-4">Start Your Training Journey with AxomSoft</h2>
+                    <p class="text-slate-400 mb-8">Reach out to request a customized syllabus, discuss team training needs, or get batch schedule details.</p>
+                    <div class="space-y-4 text-slate-300">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>training@axomsoft.com</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <span>www.axomsoft.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="bg-slate-950 p-8 rounded-2xl border border-slate-800 space-y-4" onsubmit="event.preventDefault(); alert('Inquiry submitted to AxomSoft!');">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Name</label>
+                        <input type="text" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+                        <input type="email" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">I am a...</label>
+                        <select class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500">
+                            <option>Corporate Representative</option>
+                            <option>Student / Individual Learner</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-indigo-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-lg transition-colors">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800 text-center text-sm text-slate-500">
+        <p>&copy; 2026 AxomSoft. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
