@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,14 +22,37 @@
     <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex items-center gap-3">
-                    <div class="bg-indigo-600 p-2.5 rounded-xl text-white shadow-lg shadow-indigo-500/30">
-                        <i class="fa-solid fa-code text-xl"></i>
+                
+                <!-- BRAND LOGO SIDE BLOCK -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <!-- Fused Xorai + Jaapi Axom 'A' Vector Icon -->
+                    <div class="p-1 bg-slate-900 rounded-xl border border-slate-800 group-hover:border-indigo-500/50 transition-colors">
+                        <svg class="w-9 h-9" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="nav-axom-fused" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#38BDF8" />
+                                    <stop offset="50%" stop-color="#818CF8" />
+                                    <stop offset="100%" stop-color="#EC4899" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Xorai Contour & Pedestal Base -->
+                            <path d="M 25 82 L 35 82 L 44 64 Q 20 52 18 42 L 50 16 L 82 42 Q 80 52 56 64 L 65 82 L 75 82" 
+                                  stroke="url(#nav-axom-fused)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Xorai Tray Rim Crossbar -->
+                            <line x1="28" y1="52" x2="72" y2="52" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+                            <!-- Jaapi Conical Rays & Arch -->
+                            <line x1="50" y1="16" x2="50" y2="52" stroke="url(#nav-axom-fused)" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M 34 42 Q 50 34 66 42" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+                            <!-- Apex Mindset Spark Node -->
+                            <circle cx="50" cy="16" r="5.5" fill="#FFFFFF"/>
+                        </svg>
                     </div>
+                    <!-- Brand Text -->
                     <span class="font-bold text-2xl tracking-tight text-white">
                         Axom<span class="text-indigo-500">Soft</span>
                     </span>
-                </div>
+                </a>
+
                 <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
                     <a href="#instructor" class="hover:text-indigo-400 transition-colors">Instructor</a>
                     <a href="#courses" class="hover:text-indigo-400 transition-colors">Courses</a>
@@ -121,20 +143,18 @@
             <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/50 p-8 md:p-12 rounded-3xl border border-slate-800 relative overflow-hidden">
                 <div class="grid lg:grid-cols-12 gap-8 items-center">
                     
-                    <!-- Highlights & Narrative -->
                     <div class="lg:col-span-7">
                         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-4">
                             <i class="fa-solid fa-user-shield"></i> World-Class Industry Mentorship
                         </span>
                         <h2 class="text-3xl font-bold text-white mb-4">
-                            Learn Directly from Industry Experts
+                            Learn Directly from Industry Expertise
                         </h2>
                         <p class="text-slate-300 text-base leading-relaxed mb-6">
                             Unlike traditional courses taught purely by academicians, AxomSoft’s programs are designed and delivered by a professional with 
                             <strong class="text-indigo-400 font-semibold">more than two decades of hands-on experience in the software industry</strong>. Having served as a Principal Architect, our lead mentor brings deep expertise in mobile engineering, scalability, and enterprise-grade software architecture to every lesson.
                         </p>
 
-                        <!-- Key Stats Grid -->
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800/80 pt-6">
                             <div>
                                 <p class="text-2xl md:text-3xl font-extrabold text-white">20+</p>
@@ -151,7 +171,6 @@
                         </div>
                     </div>
 
-                    <!-- Global Footprint Badge -->
                     <div class="lg:col-span-5 bg-slate-950/80 p-6 rounded-2xl border border-slate-800 space-y-4">
                         <h3 class="text-sm font-semibold text-slate-300 uppercase tracking-wider flex items-center gap-2">
                             <i class="fa-solid fa-earth-americas text-indigo-400"></i> International Exposure
@@ -281,14 +300,12 @@
 
     <!-- Form Visibility Toggle Script -->
     <script>
-        // Set this to `true` when you are ready to show the EmailJS inquiry form.
         const SHOW_ENQUIRY_FORM = false;
 
         document.addEventListener("DOMContentLoaded", function () {
             const container = document.getElementById("enquiry-form-container");
 
             if (SHOW_ENQUIRY_FORM) {
-                // Active Enquiry Form
                 container.innerHTML = `
                     <form class="bg-slate-950 p-8 rounded-2xl border border-slate-800 space-y-4" onsubmit="event.preventDefault(); alert('Inquiry submitted to AxomSoft!');">
                         <div>
@@ -316,7 +333,6 @@
                     </form>
                 `;
             } else {
-                // Fallback Card while EmailJS setup is pending
                 container.innerHTML = `
                     <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800 text-center space-y-4">
                         <div class="w-12 h-12 bg-indigo-500/10 rounded-full flex items-center justify-center text-indigo-400 mx-auto">
