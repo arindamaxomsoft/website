@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Vertical Symmetrical Tech Gradient (Sky Blue to Magenta) -->
+    <linearGradient id="icon-clean-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />   <!-- Sky Blue Apex -->
+      <stop offset="50%" stop-color="#818CF8" />  <!-- Indigo Center -->
+      <stop offset="100%" stop-color="#EC4899" /> <!-- Pink/Magenta Pedestal Base -->
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Icon Container Shield -->
+  <rect x="10" y="10" width="100" height="100" rx="20" fill="#020617" stroke="#1e293b" stroke-width="2" />
+
+  <!-- ICON EMBLEM: Xorai Outer Dish Silhouette & Pedestal Base -->
+  <g transform="translate(10, 10)">
+    <path d="M 25 82 
+             L 35 82 
+             L 44 64 
+             Q 20 52 18 42 
+             L 50 16 
+             L 82 42 
+             Q 80 52 56 64 
+             L 65 82 
+             L 75 82" 
+          fill="none" 
+          stroke="url(#icon-clean-grad)" 
+          stroke-width="4.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Horizontal Base Line Across Tray -->
+    <line x1="28" y1="52" x2="72" y2="52" stroke="#818CF8" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Clean Triangle Resting on Base Line & Touching Apex Top -->
+    <polygon points="50,16 72,52 28,52" 
+             fill="none" 
+             stroke="url(#icon-clean-grad)" 
+             stroke-width="3" 
+             stroke-linejoin="round" 
+             stroke-linecap="round" />
+  </g>
+</svg>
